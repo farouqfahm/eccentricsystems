@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eccentric Systems - AI Employees for Aviation SMBs</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background: #fff;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        h1 { font-size: 48px; margin-bottom: 20px; font-weight: 700; }
+        .subtitle { font-size: 20px; opacity: 0.9; max-width: 600px; margin: 0 auto 40px; }
+        .cta-button {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+        }
+        .problem {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        h2 { font-size: 36px; text-align: center; margin-bottom: 40px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .stat {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #e94560;
+            display: block;
+        }
+        .stat-label { color: #666; margin-top: 10px; }
+        .solutions {
+            padding: 80px 0;
+        }
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .solution-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .solution-card:hover {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+        }
+        .solution-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .solution-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .solution-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .roi {
+            background: #1a1a2e;
+            color: #e94560;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .pricing {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .pricing-card.featured {
+            border: 2px solid #e94560;
+            transform: scale(1.05);
+        }
+        .price {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        .price span {
+            font-size: 16px;
+            color: #666;
+            font-weight: 400;
+        }
+        .features {
+            list-style: none;
+            margin: 30px 0;
+        }
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .features li:last-child { border-bottom: none; }
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .footer-cta h2 { margin-bottom: 30px; }
+        .contact {
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 16px; }
+            .solution-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card.featured { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="badge">AI Employees for Aviation SMBs</div>
+            <h1>Stop Losing Charter Deals to Slow Quotes</h1>
+            <p class="subtitle">AI agents that quote in 3 minutes, follow up automatically, and never sleep. Built specifically for charter operators, flight schools, and FBOs.</p>
+            <a href="#demo" class="cta-button">Book a Demo</a>
+        </div>
+    </header>
+
+    <section class="problem">
+        <div class="container">
+            <h2>The Problem</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">2-6 hrs</span>
+                    <div class="stat-label">Average time to send a quote manually</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">70%</span>
+                    <div class="stat-label">Of quotes die in inboxes with zero follow-up</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3/5</span>
+                    <div class="stat-label">Deals lost because you're too slow</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="container">
+            <h2>Meet Your AI Employees</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">✈️</div>
+                    <h3>Charter Quoting Agent</h3>
+                    <p>Receives inquiry, calculates quote in 3 minutes (flight time, fuel, landing fees, margins), sends branded PDF instantly. Follows up automatically.</p>
+                    <span class="roi">One extra charter/month = $15K-80K</span>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">🎓</div>
+                    <h3>Flight School Ops Agent</h3>
+                    <p>Smart scheduling, student concierge via WhatsApp, progress tracking, no-show prevention with reminders, billing automation.</p>
+                    <span class="roi">+$2,400-4,800/mo in filled seats</span>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">⛽</div>
+                    <h3>FBO Customer Agent</h3>
+                    <p>Arrival concierge, remembers every pilot, proactive fuel pricing to attract diversions, auto-invoicing after departure.</p>
+                    <span class="roi">+$5,000-20,000/mo in fuel sales</span>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">🔧</div>
+                    <h3>MRO Shop Agent</h3>
+                    <p>Job quoting with parts sourcing, work order tracking, compliance docs, proactive maintenance reminders, lead gen.</p>
+                    <span class="roi">+$4,000-12,000/mo (2 extra jobs/week)</span>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">🚁</div>
+                    <h3>Tour Operator Agent</h3>
+                    <p>24/7 booking across WhatsApp/IG/web, dynamic pricing, content engine for social media, review harvesting.</p>
+                    <span class="roi">+$2,400-4,800/mo in filled seats</span>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">📊</div>
+                    <h3>Aircraft Management Agent</h3>
+                    <p>Auto-generates monthly owner reports, owner concierge, cost alerts, maintenance forecasting.</p>
+                    <span class="roi">30-40 hours/month saved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Simple Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$800<span>/mo</span></div>
+                    <ul class="features">
+                        <li>2 AI agents</li>
+                        <li>Email/WhatsApp integration</li>
+                        <li>Basic reporting</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Growth</h3>
+                    <div class="price">$1,500<span>/mo</span></div>
+                    <ul class="features">
+                        <li>5 AI agents</li>
+                        <li>CRM integration</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                        <li>Custom workflows</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Most Popular</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$3,000<span>/mo</span></div>
+                    <ul class="features">
+                        <li>All 7 AI agents</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated account manager</li>
+                        <li>24/7 priority support</li>
+                        <li>White-label options</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="demo">
+        <div class="container">
+            <div class="footer-cta">
+                <h2>See Your AI Employee in Action</h2>
+                <p class="subtitle">Send us a sample charter inquiry. We'll show you a quote in 3 minutes.</p>
+                <a href="mailto:umar@eccentricsystems.ai" class="cta-button">Book a Demo</a>
+            </div>
+            <div class="contact">
+                <p>Questions? Email umar@eccentricsystems.ai</p>
+                <p style="margin-top: 20px; opacity: 0.6;">Eccentric Systems - AI Employees for Aviation SMBs</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

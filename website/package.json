@@ -1,0 +1,17 @@
+{
+  "name": "eccentricsystems-website",
+  "version": "1.0.0",
+  "description": "AI Employees for Aviation SMBs",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT",
+    "build": "echo 'Static site - no build needed'",
+    "test": "echo 'No tests'"
+  },
+  "keywords": ["aviation", "ai", "automation", "charter"],
+  "author": "Eccentric Systems",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
